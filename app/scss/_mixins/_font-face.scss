@@ -1,0 +1,14 @@
+@import "vars";
+
+@mixin font($font-family, $file-path, $weight: normal, $style: normal) {
+	@font-face {
+		font-family: $font-family;
+		font-weight: $weight;
+		font-style: $style;
+
+		src: url('#{$fonts-path}#{$file-path}.eot');
+		src: url('#{$fonts-path}#{$file-path}.eot?#iefix') format('embedded-opentype'),
+		url('#{$fonts-path}#{$file-path}.woff') format('woff'),
+		url('#{$fonts-path}#{$file-path}.ttf') format('truetype');
+	}
+}
