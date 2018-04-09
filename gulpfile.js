@@ -12,34 +12,6 @@ var gulp 				 = require("gulp"),
 		notify 			 = require('gulp-notify'),
 		runSequence  = require('run-sequence');
 
-/* 
-
-// Gulp Task (Example)
-* gulp.task('task-name', function () {
-*	 return gulp.src('source-files') // Get source files with gulp.src
-*		 .pipe(aGulpPlugin()) // Sends it through a gulp plugin
-*		 .pipe(gulp.desk('destination')) // Output the file in the destination folder
-* });
-
-// Gulp watch syntax
-* gulp.watch('files-to-watch', ['tasks', 'to', 'run']); 
-
-* gulp.task('watch', ['array', 'of', 'tasks', 'to', 'complete','before', 'watch'], function (){
-  // ...
-})
-
-// Runs a sequence of gulp tasks in the specified order
-gulp.task('task-name', function(callback) {
-  runSequence('task-one', 'task-two', 'task-three', callback);
-});
-
-// Several of task run parallel
-gulp.task('task-name', function(callback) {
-  runSequence('task-one', ['tasks','two','run','in','parallel'], 'task-three', callback);
-});
-
-*/
-
 /* BrowserSync task (LiveReload for Browser) */
 gulp.task('browserSync', function () {
 	browserSync.init({
